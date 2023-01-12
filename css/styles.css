@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --colortextos: #777777;
+  --colorbotones: #ff0000;
+  --colorfondo: #a381f2;
+  --padingsecciones: 60px 0;
+  --marginelemnetos: 40px;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+/* Aqui empieza la personalizacion del header */
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: var(--padingsecciones);
+}
+
+.menu-navegacion {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  height: 10vh;
+  width: 15vw; 
+  align-items: center; 
+}
+
+.logo img {
+  margin: 10% auto;
+  display: block;
+  height: 50%;
+}
+
+.enlaces li {
+  list-style: none;
+  display: inline-block;
+}
+
+.enlaces a {
+  color: #0004ff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 800;
+}
+
+/* Hero */
+
+.hero {
+  height: 500px;
+  background-image: url(/imagenes/fondo-header.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contenedor-textos {
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-textos h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px blue;
+}
+
+.contenedor-textos p {
+  color: rgb(8, 0, 255);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.boton {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--colorbotones);
+  border-radius: 15px;
+}
+
+.boton:hover {
+  background: rgba(255, 255, 255, 0.378);
+  color: gray;
+  border: 1px solid gray;
+  transition: 0.5s;
+}
+
+/* main */
+main {
+  box-shadow: 0 0 10px black;
+}
+
+.titulo-seccion {
+  text-align: center;
+  font-size: 55px;
+  color: #ffffffcc;
+  text-shadow: 0 0 10px black;
+}
+.copy {
+  width: 70%;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px auto;
+}
+.contenedor-1 {
+  background-image: url(/imagenes/salaRestaurant.jpg);
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  padding: var(--padingsecciones);
+}
+
+.beneficios {
+  padding-top: var(--marginelemnetos);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  font-size: 20px;
+  width: 10em;
+  height: 10em;
+  background: #a381f2;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.b1 {
+  background-image: url(/imagenes/cocinero-1.jpg);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+}
+.b2 {
+  background-image: url(/imagenes/cocinero-2.jpg);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+}
+.b3 {
+  background-image: url(/imagenes/cocinero-3.jpg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.beneficio h3 {
+  text-shadow: 0 0 10px black;
+}
+
+.proyects {
+  background-image: url(/imagenes/fondo-galeria.jpg);
+}
+.titulo-arte {
+  text-align: center;
+  font-size: 55px;
+  color: #ffffffcc;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+}
+.copy-1 {
+  width: 70%;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px auto;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contenedor-imagenes img {
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.831);
+  margin-bottom: var(--marginelemnetos);
+}
+
+.contenedor-imagenes img:hover {
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.831);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociales i {
+  font-size: 50px;
+  padding: 0 20px;
+  filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+}
+.redes-sociales i:hover {
+  font-size: 60px;
+  transition: 0.2s ease-in-out;
+  padding: 0 10px;
+}
+
+.contenedor h4 {
+  color: black;
+  font-weight: 600;
+  font-size: 35px;
+}
+.contenedor h5 {
+  color: black;
+  font-weight: 600;
+}
+
+/* Footer */
+.contenedor-fin {
+  width: 100%;
+  height: 7vh;
+  background: white;
+  box-shadow: 0 0 10px black;
+}
+
+.contenedor-fin p {
+  text-align: center;
+  line-height: 7vh;
+  font-weight: 600;
+}

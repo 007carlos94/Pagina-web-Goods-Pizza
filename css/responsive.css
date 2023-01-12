@@ -1,0 +1,64 @@
+@media screen and (max-width:900px){
+    .menu-navegacion {
+        flex-direction: column;
+        justify-content: space-evenly;        
+        height: 160px;
+        align-items: center;
+      }
+      header.logo{
+        align-items: center;
+      }
+      .logo {
+        
+        height: 8vh;
+        width: 30vw;
+      }
+      .logo img {
+        margin: 10% auto;
+        display: block;
+        height: 70%;
+      }
+
+      .enlaces a{
+        font-size: 20px;
+        
+      }
+      .hero h1{
+        font-size: 45px;
+      }
+      .hero p{
+        font-size: 20px;
+      }
+
+      .beneficio{
+        margin-bottom: 40px;
+      }
+      .contenedor-imagenes img{
+        width: 90%;
+      }
+
+      .copy-1{
+        width: 95%;
+        font-size: 25px;
+      }
+      
+}
+
+@media screen and (max-width:440px){
+    .enlaces a{
+        font-size: 15px;
+        
+      }
+
+    .hero h1{
+        font-size: 30px;
+      }
+      .hero p{
+        font-size: 20px;
+      }
+
+      .contenedor-fin p{
+        font-size: 12px;
+      }
+
+}
